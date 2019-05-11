@@ -1,0 +1,11 @@
+<h1>作成ページ</h1>
+
+<%= form_with(model: @task, local: true) do |new| %>
+  <%= new.label :content, 'メッセージ' %>
+  <%= new.text_field :content %>
+  
+  <%= new.submit '登録' %>
+<% end %>
+
+<%= link_to '一覧に戻る', tasks_path %>
+  
